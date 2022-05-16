@@ -25,7 +25,12 @@ const Logo = styled.h1`
 const Menu = styled.ul`
   display: flex;
   list-style: none;
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
+
 const MenuItem = styled.li`
   margin-right: 30px;
   font-size: 20px;
@@ -41,6 +46,10 @@ const Button = styled.button`
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+  @media only screen and (max-width: 480px) {
+    width: 80px;
+    font-size: 10px;
+  }
 `;
 const Navbar = () => {
   return (

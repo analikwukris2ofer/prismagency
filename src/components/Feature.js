@@ -5,16 +5,26 @@ import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
   display: flex;
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
   // padding: 30px;
 `;
 const Left = styled.div`
   flex: 0.5;
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const Right = styled.div`
   flex: 0.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const Image = styled.img`
@@ -23,6 +33,9 @@ const Image = styled.img`
 
 const Title = styled.span`
   font-size: 50px;
+  @media only screen and (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 const SubTitle = styled.span`
   font-size: 24px;
