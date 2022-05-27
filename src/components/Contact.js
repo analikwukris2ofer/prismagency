@@ -152,7 +152,7 @@ const Contact = () => {
         <AddressContainer>
           <AddressItem>
             <Icon src={Map} />
-            <Text>North Rhine Westphalis, Germany</Text>
+            <Text>North Rhine Westphalia, Germany</Text>
           </AddressItem>
           <AddressItem>
             <Icon src={Phone} />
